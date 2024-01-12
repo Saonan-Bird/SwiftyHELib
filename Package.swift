@@ -16,9 +16,9 @@ let package = Package(
             name: "ObjCHELib",
             path: "Sources/ObjC",
             cxxSettings: [
-                .headerSearchPath("../CPP/"),
-//                .headerSearchPath("../CPP/include"),
-                .headerSearchPath("../CPP/build/helib_pack/include/")
+                .headerSearchPath("../HELib/helib_pack"),
+                .headerSearchPath("../HELib/helib_pack/include"),
+                .unsafeFlags(["--std=c++17"])
             ]
         ),
         // Targets are the basic building blocks of a package, defining a module or a test suite.
